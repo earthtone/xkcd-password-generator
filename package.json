@@ -1,0 +1,17 @@
+{
+  "name": "@earthtone/xkcd-password",
+  "version": "0.0.1",
+  "description": "https://imgs.xkcd.com/comics/password_strength.png",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape ./**/*.test.js"
+  },
+  "bin": {
+    "xkcd-password": "./bin/generate.js"
+  },
+  "author": "earthtone <earthlyillusion@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.2"
+  }
+}
