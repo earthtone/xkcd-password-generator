@@ -1,6 +1,6 @@
 {
   "name": "@earthtone/xkcd-password",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "https://imgs.xkcd.com/comics/password_strength.png",
   "main": "index.js",
   "scripts": {
