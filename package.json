@@ -12,7 +12,8 @@
   "author": "earthtone <earthlyillusion@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.3.2"
+    "chalk": "^2.3.2",
+    "randombytes": "^2.0.6"
   },
   "devDependencies": {
     "nodemon": "^1.17.2",
