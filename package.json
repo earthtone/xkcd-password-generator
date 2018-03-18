@@ -4,7 +4,7 @@
   "description": "https://imgs.xkcd.com/comics/password_strength.png",
   "main": "index.js",
   "scripts": {
-    "test": "tape ./**/*.test.js"
+    "test": "tape lib/__tests__/*.test.js | tap-spec"
   },
   "bin": {
     "xkcd-password": "./bin/generate.js"
@@ -13,5 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.9.0"
   }
 }

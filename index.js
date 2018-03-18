@@ -32,20 +32,4 @@
 // Original Comic: https://imgs.xkcd.com/comics/password_strength.png
 // Original Concept: http://preshing.com/20110811/xkcd-password-generator/ku
 
-const createHash = require('./lib/create_hash');
-const { words: wordList } = require('./lib/word_list.json');
-
-function generateList() {
-	var hash = createHash();
-	var choices = [];
-	for (let i = 0; i < 4; i++) {
-		var jsRandom = Math.floor(Math.random() * 0x100000000);
-		var index = ((jsRandom ^ hash[i]) + 0x100000000) % wordList.length;
-		choices.push(wordList[index]);
-	}
-
-	return choices;
-}
-
-var list = generateList();
-console.log(list);
+module.exports = require('./lib/generate_list');
