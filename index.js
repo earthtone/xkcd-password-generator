@@ -3,4 +3,5 @@
 // Original Source Code: http://preshing.com/20110811/xkcd-password-generator/ku
 // -------------------------------------------------------------------
 
-module.exports = require('./lib/generate_list');
+import generateList from './lib/generate_list'
+export default generateList
